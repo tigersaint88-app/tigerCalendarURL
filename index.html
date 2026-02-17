@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Tiger Lunar Calendar — Support</title>
+  <meta name="description" content="Support page for Tiger Lunar Calendar (老虎皇历)." />
+  <style>
+    :root { --bg:#f7f3ea; --ink:#1f3a3d; --muted:#5b6b6e; --card:#ffffff; --line:#e7e0d6; }
+    body{ margin:0; font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,"PingFang SC","Noto Sans CJK SC","Microsoft YaHei",sans-serif;
+      background:var(--bg); color:var(--ink); }
+    header{ padding:28px 16px 0; max-width:960px; margin:0 auto; }
+    .brand{ display:flex; gap:14px; align-items:center; }
+    .logo{ width:44px; height:44px; border-radius:12px; background:linear-gradient(135deg,#8c1d18,#c8a24a);
+      box-shadow:0 6px 18px rgba(0,0,0,.10); }
+    h1{ margin:0; font-size:22px; letter-spacing:.2px; }
+    .sub{ margin:6px 0 0; color:var(--muted); font-size:14px; }
+    main{ max-width:960px; margin:18px auto 40px; padding:0 16px; }
+    .card{ background:var(--card); border:1px solid var(--line); border-radius:16px; padding:18px; box-shadow:0 8px 22px rgba(0,0,0,.06); }
+    h2{ margin:0 0 10px; font-size:16px; }
+    p{ margin:10px 0; line-height:1.55; }
+    a{ color:#0b5bd3; text-decoration:none; }
+    a:hover{ text-decoration:underline; }
+    .grid{ display:grid; grid-template-columns:1fr; gap:14px; }
+    @media (min-width: 860px){ .grid{ grid-template-columns: 1.2fr .8fr; } }
+    .meta{ font-size:13px; color:var(--muted); }
+    footer{ max-width:960px; margin:0 auto; padding:18px 16px 28px; color:var(--muted); font-size:12px; }
+    .pill{ display:inline-block; padding:4px 10px; border:1px solid var(--line); border-radius:999px; font-size:12px; color:var(--muted); background:#fff; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <div class="logo" aria-hidden="true"></div>
+      <div>
+        <h1>Tiger Lunar Calendar <span class="pill">Support</span></h1>
+        <div class="sub">老虎皇历 — Practical lunar rhythm for daily life</div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="grid">
+      <section class="card">
+        <h2>Contact</h2>
+        <p>If you have questions, feedback, or need help, please contact us:</p>
+        <p><strong>Email:</strong> <a href="mailto:support@yourdomain.com">support@yourdomain.com</a></p>
+        <p class="meta">We typically respond within 48 hours.</p>
+
+        <h2 style="margin-top:16px;">FAQ</h2>
+        <p><strong>Q: Is the content predictive or advisory?</strong><br/>
+          A: No. The app provides cultural calendar references for lifestyle planning only.</p>
+        <p><strong>Q: Does the app require an account?</strong><br/>
+          A: No. You can use it without signing in.</p>
+        <p><strong>Q: Does the app collect personal data?</strong><br/>
+          A: Please see the Privacy Policy for details.</p>
+
+        <p style="margin-top:16px;">
+          <a href="./privacy.html">Privacy Policy</a>
+          &nbsp;·&nbsp;
+          <a href="./about.html">About</a>
+        </p>
+      </section>
+
+      <aside class="card">
+        <h2>App Summary</h2>
+        <p class="meta">Tiger Lunar Calendar (老虎皇历) helps you manage daily life with lunar dates, solar terms, zodiac cycles, and recurring reminders.</p>
+
+        <h2 style="margin-top:16px;">Important Note</h2>
+        <p class="meta">This app does not provide medical, legal, or financial advice. All content is for cultural reference purposes only.</p>
+
+        <h2 style="margin-top:16px;">Links</h2>
+        <p class="meta">
+          Support: <a href="./index.html">index.html</a><br/>
+          Privacy: <a href="./privacy.html">privacy.html</a><br/>
+          About: <a href="./about.html">about.html</a>
+        </p>
+      </aside>
+    </div>
+  </main>
+
+  <footer>
+    © <span id="y"></span> Tiger Lunar Calendar. All rights reserved.
+    <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+  </footer>
+</body>
+</html>
