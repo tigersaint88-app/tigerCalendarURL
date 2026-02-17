@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About — Tiger Lunar Calendar</title>
+  <meta name="description" content="About Tiger Lunar Calendar (老虎皇历)." />
+  <style>
+    :root { --bg:#f7f3ea; --ink:#1f3a3d; --muted:#5b6b6e; --card:#ffffff; --line:#e7e0d6; }
+    body{ margin:0; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,"PingFang SC","Noto Sans CJK SC","Microsoft YaHei",sans-serif;
+      background:var(--bg); color:var(--ink); }
+    header,main,footer{ max-width:960px; margin:0 auto; padding:0 16px; }
+    header{ padding-top:26px; }
+    a{ color:#0b5bd3; text-decoration:none; }
+    a:hover{ text-decoration:underline; }
+    .card{ background:var(--card); border:1px solid var(--line); border-radius:16px; padding:18px; box-shadow:0 8px 22px rgba(0,0,0,.06); }
+    h1{ margin:0; font-size:22px; }
+    .sub{ margin:6px 0 0; color:var(--muted); font-size:13px; }
+    p{ line-height:1.6; }
+    footer{ padding:18px 16px 28px; color:var(--muted); font-size:12px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>About</h1>
+    <div class="sub">Tiger Lunar Calendar (老虎皇历)</div>
+    <p class="sub"><a href="./index.html">← Back to Support</a></p>
+  </header>
+
+  <main>
+    <section class="card">
+      <p>Tiger Lunar Calendar is a practical tool inspired by traditional Chinese timekeeping. It focuses on lunar dates, solar terms, zodiac cycles, and recurring reminders for daily planning.</p>
+      <p class="sub">Note: All content is provided for cultural reference and lifestyle planning only.</p>
+      <p><strong>Contact:</strong> <a href="mailto:support@yourdomain.com">support@yourdomain.com</a></p>
+      <p style="margin-top:14px;">
+        <a href="./privacy.html">Privacy Policy</a>
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    © <span id="y"></span> Tiger Lunar Calendar. <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+  </footer>
+</body>
+</html>
